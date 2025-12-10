@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Checkout Page</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- INTERNAL CSS (style.css inside same file) -->
+    <style>
+        body {
+            background: rgb(252, 250, 250);
+            font-family: Arial, sans-serif;
+        }
+
+        .page-container {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .panel {
+            background: #efecec;
+            border: 1px solid #090606;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h4, h5 {
+            font-weight: 600;
+        }
+
+        .hotel-img {
+            width: 180px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .label-small {
+            font-size: 14px;
+        }
+
+        .price-box {
+            background: #f0faff;
+            border: 1px solid #bde0ff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .blue-text {
+            color: #0071c2;
+        }
+
+        .badge-green {
+            background: #0ab34f;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: white;
+            font-size: 12px;
+        }
+
+        textarea {
+            resize: none;
+            height: 90px;
+        }
+
+        .btn-primary {
+            background: #0071c2 !important;
+            border: none;
+            padding: 12px 22px;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+
+        .form-check-input {
+            border: 2px solid #868686;
+        }
+
+        .home{
+            float:left;
+            margin-left: 20px;
+
+        }
+    </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="logo.png" alt="Website Logo" width="60" class="me-2">
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Rooms</a></li>
+        <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+        <li class="nav-item"><a class="nav-link" href="HouseRules.html">House Rules</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<br><br><br><br>
+
+<!-- ⭐ FORM START -->
+<form id="bookingForm" novalidate>
+<div class="page-container py-4">
+
+    <!-- HOTEL DETAILS -->
+    <div class="panel d-flex gap-3">
+        <img src="main.png" class="hotel-img">
+        <div>
+            <h4>Golden Wave Resort</h4>
+            <div class="badge-green">4-star resort</div>
+            <p class="mb-1">Bendoor, Mangalore, 575002</p>
+            <a href="https://maps.app.goo.gl/HMUZP21pJqizA58K9" class="blue-text">Excellent location - show map</a>
+        </div>
+    </div>
+
+    <!-- ENTER DETAILS -->
+    <div class="panel">
+        <h4 class="mb-3">Enter your details</h4>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">First name *</label>
+                <input type="text" id="firstName" class="form-control" required>
+                <div class="invalid-feedback">First name is required.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Last name *</label>
+                <input type="text" id="lastName" class="form-control" required>
+                <div class="invalid-feedback">Last name is required.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Email address *</label>
+                <input type="email" id="email" class="form-control" required>
+                <div class="invalid-feedback">Valid email is required.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Confirm email address *</label>
+                <input type="email" id="confirmEmail" class="form-control" required>
+                <div class="invalid-feedback">Emails must match.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Phone number *</label>
+                <input type="text" id="phone" class="form-control" required>
+                <div class="invalid-feedback">Phone number is required.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Nationality *</label>
+                <select class="form-select" id="nationality" required>
+                    <option value="">Choose...</option>
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Australia</option>
+                </select>
+                <div class="invalid-feedback">Please select one.</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h5 class="mb-2">Who's checking in?</h5>
+
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="guest" value="self" required>
+            <label class="form-check-label">I'll check in</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="guest" value="other" required>
+            <label class="form-check-label">Someone else will check in</label>
+            <div class="invalid-feedback d-block">Please choose one option.</div>
+        </div>
+    </div>
+
+    <!-- OTHER SECTIONS (unchanged) -->
+    <div class="panel">
+        <h4>Good to know</h4>
+        <ul class="mt-2">
+            <li>Check-in: 12 Dec, 12 PM</li>
+            <li>Check-out: 14 Dec, 12 PM</li>
+            <li>Your booking includes free cancellation</li>
+        </ul>
+    </div>
+
+    <div class="panel">
+        <h4>Garden Chalet</h4>
+        <ul>
+            <li>Breakfast included</li>
+            <li>Private bathroom</li>
+            <li>Free WiFi</li>
+        </ul>
+    </div>
+
+    <div class="panel">
+        <h4>Add to your stay</h4>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Airport shuttle</label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Breakfast in room (₹700 extra)</label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Car rental available</label>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h4>Special requests</h4>
+        <textarea class="form-control"></textarea>
+    </div>
+
+    <div class="panel">
+        <h4>Your arrival time</h4>
+        <select class="form-select mb-3">
+            <option selected>Between 1 PM – 2 PM</option>
+            <option>Between 2 PM – 3 PM</option>
+            <option>Between 3 PM – 4 PM</option>
+            <option>After 5 PM</option>
+        </select>
+    </div>
+
+    <div class="panel">
+        <h4>Price Summary</h4>
+    </div>
+
+    <!-- SUBMIT BUTTON -->
+    <div class="text-end mb-4">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+</div>
+</form>
+
+<!-- ⭐ FORM VALIDATION SCRIPT (NO ALERTS) -->
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function (e) {
+    let form = this;
+
+    // Built-in browser validation
+    if (!form.checkValidity()) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+
+    // Email match check
+    let email = document.getElementById("email");
+    let confirmEmail = document.getElementById("confirmEmail");
+
+    if (email.value !== confirmEmail.value) {
+        confirmEmail.classList.add("is-invalid");
+        e.preventDefault();
+        e.stopPropagation();
+    } else {
+        confirmEmail.classList.remove("is-invalid");
+    }
+
+    // Add Bootstrap validation class
+    form.classList.add("was-validated");
+});
+</script>
+
+</body>
+</html>

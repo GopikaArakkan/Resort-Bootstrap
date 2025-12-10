@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paradise Resort</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    *{ font-family: Georgia, 'Times New Roman', Times, serif; }
+
+    body {
+      background: url("g5.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: black;
+    }
+
+    #rooms{ margin-top: 50px; color: black; }
+    #about{ margin-top: 80px; }
+    #facilities{ color:black; }
+    #HouseRules{ color:black; }
+    #contact{ color:black; }
+
+    .section-title a{ text-decoration: none; }
+
+    .hero h1 { font-size: 3.5rem; font-weight: bold; }
+    .hero p { font-size: 1.5rem; }
+    .section-title { margin-bottom: 2rem; text-align: center; }
+
+    footer {
+      background: #343a40; 
+      color: white;
+      padding: 2rem 0;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Background / Hero Section */
+    .hero-section {
+      background: url("g5.jpg");
+      height: 100vh;
+      position: relative;
+      color: #fff;
+      width:auto;
+      display:flex;
+      align-items:center;
+    }
+
+    .navbar { background: rgba(0,0,0,0.6); }
+    .navbar-brand { font-size: 32px; font-weight: 700px; color: #fff !important; }
+
+    .nav-link {
+      color: #fff !important;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
+    .hero-text {
+      margin-top: 120px;
+      text-shadow: 1px 1px 2px black;
+      box-shadow: 10px 10px 5px rgb(13, 10, 10);
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .btn-read {
+      background: #ff6a00;
+      color: #fff;
+      padding: 10px 22px;
+      font-weight: 600;
+      font-size: 15px;
+      border: none;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      box-shadow: 10px 10px 5px rgb(13, 10, 10);
+    }
+.footer-links li a:hover {
+    text-decoration: underline;
+    color: #ffc107;
+  }
+
+  .mb-1{
+    font-size: 13px;
+  }
+
+  .input-group input {
+    font-size: 13px;
+  }
+
+   .input-group button{
+    font-size: 13px;
+   }
+
+   .col-md-2 a{
+      font-size: 13px;
+   }
+
+   .col-md-4 p{
+    font-size: 13px;
+   }
+
+   .text-center p{
+      font-size: 13px;
+   }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="logo.png" alt="Website Logo" width="60" class="me-2">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+        <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+        <li class="nav-item"><a class="nav-link" href="#HouseRules">House Rules</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="hero-text">
+          <h1>INCIDIT UTABR</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus orci,
+            volutpat at diam at, tincidunt malesuada turpis.
+          </p>
+          <a href="#rooms" class="btn btn-read">Book</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Us <a href="about.html">➡️</a></h2>
+      <p>Discover the beauty of Golden Waves Resort</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="maldives.1.jpg" class="img-fluid rounded" alt="Resort">
+      </div>
+      <div class="col-md-6">
+        <p>Golden Waves Resort offers world-class hospitality with breathtaking views and luxurious rooms.
+          It offers world-class hospitality with breathtaking views and luxurious rooms.offers world-class hospitality with breathtaking views and luxurious rooms.
+          offers world-class hospitality with breathtaking views and luxurious rooms.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ROOMS -->
+<section id="rooms" class="py-5 bg-light">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Rooms</h2>
+      <p>Choose from a variety of luxury accommodations</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="deluxe.png" class="card-img-top" alt="Room" height="184px">
+          <div class="card-body">
+            <h5 class="card-title">Deluxe Room</h5>
+            <p class="card-text">Spacious and elegant with modern amenities.</p>
+            <a href="search.html" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="family.png" class="card-img-top" alt="Room" height="184px">
+          <div class="card-body">
+            <h5 class="card-title">Suite</h5>
+            <p class="card-text">Luxury suite with private balcony and ocean view.</p>
+            <a href="search.html" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="suite.png" class="card-img-top" alt="Room" height="184px">
+          <div class="card-body">
+            <h5 class="card-title">Family Room</h5>
+            <p class="card-text">Perfect for families with extra space and comfort.</p>
+            <a href="search.html" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FACILITIES -->
+<section id="facilities" class="py-5">
+  <div class="container">
+    <div class="section-title">
+      <h2>Facilities <a href="facilities.html">➡️</a></h2>
+      <p>Enjoy our world-class amenities</p>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="bi bi-water" style="font-size:2rem;"></i>
+        <h5>Swimming Pool</h5>
+        <p>Relax and unwind in our infinity pool.</p>
+      </div>
+
+      <div class="col-md-4">
+        <i class="bi bi-spa" style="font-size:2rem;"></i>
+        <h5>Spa & Wellness</h5>
+        <p>Rejuvenate with our spa treatments.</p>
+      </div>
+
+      <div class="col-md-4">
+        <i class="bi bi-cup-hot" style="font-size:2rem;"></i>
+        <h5>Fine Dining</h5>
+        <p>Gourmet cuisine from around the world.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- HOUSE RULES -->
+<section id="HouseRules" class="py-5">
+  <div class="container">
+    <div class="section-title">
+      <h2>House-Rules <a href="HouseRules.html">➡️</a></h2>
+      <p>Please note the following</p>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Check-In / Check-Out</h5>
+        <p>From 13:00 Until 11:00</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Age Restriction</h5>
+        <p>Minimum age for check-in is 18</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Pets</h5>
+        <p>Pets are not allowed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="section-title text-center mb-4">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you</p>
+    </div>
+
+    <form action="#">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Your Email</label>
+          <input type="email" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Your Message</label>
+        <textarea class="form-control" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Hotel Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">Golden Waves Resort</h5>
+        <p>
+          Experience luxury, comfort, and world-class hospitality at our beachfront resort.
+          Your perfect vacation starts here.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 mb-4">
+        <h6 class="text-uppercase mb-3">Quick Links</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#rooms" class="text-light">Rooms</a></li>
+          <li><a href="#dining" class="text-light">Dining</a></li>
+          <li><a href="#spa" class="text-light">Spa</a></li>
+          <li><a href="#contact" class="text-light">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase mb-3">Contact Us</h6>
+        <p class="mb-1"><strong>Address:</strong> Beach Road, Maldives</p>
+        <p class="mb-1"><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> info@besthotel.com</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase mb-3">Subscribe</h6>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="email address">
+            <button class="btn btn-primary" type="submit">Go</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 The Best Hotel. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</body>
+</html>

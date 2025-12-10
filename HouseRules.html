@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Policies</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.policy-section {
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.policy-icon {
+    font-size: 28px;
+    margin-right: 15px;
+    color: #003580;
+}
+
+.policy-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.policy-text {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.policy-table {
+    background: #fff;
+}
+
+.policy-table td {
+    padding: 12px;
+}
+
+.payment-icons img {
+    height: 35px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    background: white;
+}
+
+h2{
+    
+    
+     font-weight: bold;
+     margin-top: 30px;
+     margin-left: 35px;
+}
+</style>
+
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <img src="logo.png" alt="logo" width="60">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Rooms</a></li>
+        <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">House Rules</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
+         
+      </ul>
+    </div>
+  </div>
+</nav><br><br><br><br>
+
+
+  <h2>House-Rules</h2>
+<div class="container my-5">
+  
+
+    <!-- Check-in -->
+    <div class="policy-section">
+        <div class="d-flex align-items-start">
+            <i class="bi bi-arrow-right-circle policy-icon"></i>
+            <div>
+                <h5 class="policy-title">Check-in</h5>
+                <p class="policy-text">From 13:00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Check-out -->
+    <div class="policy-section">
+        <div class="d-flex align-items-start">
+            <i class="bi bi-box-arrow-left policy-icon"></i>
+            <div>
+                <h5 class="policy-title">Check-out</h5>
+                <p class="policy-text">Until 11:00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cancellation / Prepayment -->
+    <div class="policy-section">
+        <div class="d-flex align-items-start">
+            <i class="bi bi-info-circle policy-icon"></i>
+            <div>
+                <h5 class="policy-title">Cancellation/ prepayment</h5>
+                <p class="policy-text">
+                    Cancellation and prepayment policies vary according to accommodation type.
+                    Please check what <a href="#">conditions</a> may apply to each option when making your selection.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Children and beds -->
+    <div class="policy-section">
+        <div class="d-flex align-items-start">
+            <i class="bi bi-people policy-icon"></i>
+            <div class="w-100">
+
+                <h5 class="policy-title">Children and beds</h5>
+
+                <h6 class="fw-semibold mt-3">Child policies</h6>
+                <p class="policy-text">Children of any age are welcome.</p>
+                <p class="policy-text">
+                    Children 9 years and above will be charged as adults at this property.
+                </p>
+                <p class="policy-text">
+                    To see correct prices and occupancy information, please add the number of children in your group and their ages to your search.
+                </p>
+
+                <!-- Cot and extra bed policies -->
+                <h6 class="fw-semibold mt-3">Cot and extra bed policies</h6>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered align-middle policy-table">
+                        <tbody>
+                            <tr>
+                                <td class="fw-semibold">0+ years</td>
+                                <td>
+                                    <i class="bi bi-person-plus me-2"></i>
+                                    Extra bed upon request
+                                </td>
+                                <td>₹ 600 per person, per night</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="policy-text">
+                    Prices for extra beds are not included in the total price, and will have to be paid separately during your stay.
+                </p>
+                <p class="policy-text">
+                    The number of extra beds allowed is dependent on the option you choose.
+                    Please check your selected option for more information.
+                </p>
+                <p class="policy-text">There are no cots available at this property.</p>
+                <p class="policy-text">All extra beds are subject to availability.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Age restriction -->
+    <div class="policy-section">
+        <div class="d-flex align-items-start">
+            <i class="bi bi-person-badge policy-icon"></i>
+            <div>
+                <h5 class="policy-title">Age restriction</h5>
+                <p class="policy-text">The minimum age for check-in is 18</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pets -->
+    <div class="policy-section">
+        <div class="d-flex align-items-start">
+            <i class="bi bi-ban policy-icon"></i>
+            <div>
+                <h5 class="policy-title">Pets</h5>
+                <p class="policy-text">Pets are not allowed.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Groups -->
+    <div class="policy-section">
+        <div class="d-flex align-items-start">
+            <i class="bi bi-people-fill policy-icon"></i>
+            <div>
+                <h5 class="policy-title">Groups</h5>
+                <p class="policy-text">
+                    When booking more than 3 rooms, different policies and additional supplements may apply.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Methods -->
+    <div class="policy-section">
+        <div class="d-flex align-items-start">
+            <i class="bi bi-credit-card policy-icon"></i>
+            <div>
+                <h5 class="policy-title">Accepted payment methods</h5>
+
+                <div class="payment-icons mt-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Visa.svg" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Rupay-Logo.png" alt="RuPay">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Cash_logo.png" alt="Cash">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
